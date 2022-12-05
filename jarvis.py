@@ -2,7 +2,7 @@ import speech_recognition as sr
 import webbrowser
 
 r = sr.Recognizer()
-url = 'https://youtu.be/yl6rhI20YgU?t=26'
+url = 'https://www.youtube.com/watch?v=_KzHGbpxMOY&ab_channel=88rising'
 url2 = 'https://youtu.be/VjsUHemfqjQ?t=2'
 
 with sr.Microphone() as source:
@@ -14,7 +14,7 @@ with sr.Microphone() as source:
 
     text = r.recognize_google(audio_data, show_all=False)
     print(text)
-    if text == 'Jarvis play villain songs':
+    if text == 'Jarvis play California':
         chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
         webbrowser.get(chrome_path).open(url)
     else:
